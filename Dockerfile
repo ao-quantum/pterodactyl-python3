@@ -4,7 +4,7 @@ FROM        python:slim
 LABEL       author="Aditya Das" maintainer="me@quantumsoul.dev"
 
 RUN apt-get update -y
-RUN apt-get install -y curl ca-certificates openssl sqlite iproute2 gcc make g++
+RUN apt-get install -y curl ca-certificates openssl sqlite3 iproute2 gcc make g++
 RUN useradd -d /home/container -m container
  
 USER container
